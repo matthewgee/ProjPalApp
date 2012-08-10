@@ -1,4 +1,6 @@
 SinglyRailsSkeleton::Application.routes.draw do
+  resources :projects
+
   resources :people
 
   match "auth/:service"          => "auth#service"
