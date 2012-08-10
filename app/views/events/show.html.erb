@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @event.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @event.name %>
+</p>
+
+<p>
+  <b>Project:</b>
+  <%= @event.project_id %>
+</p>
+
+<p>
+  <b>Person:</b>
+  <%= @event.person_id %>
+</p>
+
+<p>
+  <b>Shared event:</b>
+  <%= @event.shared_event_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @event.description %>
+</p>
+
+<p>
+  <b>Time date:</b>
+  <%= @event.time_date %>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%= @event.source %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @event.type %>
+</p>
+
+<p>
+  <b>Visibility:</b>
+  <%= @event.visibility %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
