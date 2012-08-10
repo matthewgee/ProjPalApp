@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  name: MyString
+  project_id: 1
+  person_id: 1
+  shared_event_id: 1
+  description: MyText
+  when_occurred: MyString
+  source: MyString
+  type: 
+  visibility: 1
+
+two:
+  id: 1
+  name: MyString
+  project_id: 1
+  person_id: 1
+  shared_event_id: 1
+  description: MyText
+  when_occurred: MyString
+  source: MyString
+  type: 
+  visibility: 1
