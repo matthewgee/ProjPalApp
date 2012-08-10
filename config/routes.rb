@@ -1,4 +1,6 @@
 ProjPalApp::Application.routes.draw do
+  resources :resources
+
   resources :events
 
   resources :projects
