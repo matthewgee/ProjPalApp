@@ -19,3 +19,12 @@
       - else
         is not connected.
         %a(href="/auth/singly?service=#{service}") Connect
+
+- if @github_events
+  - @github_events.each do |event|
+    = event
+    / %dt
+    /   = key
+    / %dd
+    /   = value
+    
