@@ -1,6 +1,10 @@
+
 require "httparty"
 
 class DefaultController < ApplicationController
+
+before_filter :authenticate_person!
+
   def home
     if access_token
       @profiles = get_singly(profiles_url)
