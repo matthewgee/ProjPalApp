@@ -1,4 +1,6 @@
 SinglyRailsSkeleton::Application.routes.draw do
+  devise_for :people
+
   resources :projects
 
   resources :people

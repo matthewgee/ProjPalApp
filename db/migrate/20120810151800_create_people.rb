@@ -4,7 +4,6 @@ class CreatePeople < ActiveRecord::Migration
       t.string :firstname
       t.string :lastname
       t.string :picture_url
-      t.string :email
       t.string :bio
 
       t.timestamps
