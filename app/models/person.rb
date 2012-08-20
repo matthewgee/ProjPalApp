@@ -6,6 +6,8 @@ class Person < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
-  attr_accessible :bio, :email, :firstname, :id, :lastname, :picture_url
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :singly_token
+  attr_accessible :bio, :firstname, :id, :lastname, :picture_url
+  
+  
 end
