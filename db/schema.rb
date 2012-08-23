@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120820144055) do
+ActiveRecord::Schema.define(:version => 20120823140516) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -69,6 +69,14 @@ ActiveRecord::Schema.define(:version => 20120820144055) do
     t.integer  "shared_event_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "service_projects", :force => true do |t|
+    t.integer  "service_id"
+    t.integer  "project_id"
+    t.string   "project_alias"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "services", :force => true do |t|
