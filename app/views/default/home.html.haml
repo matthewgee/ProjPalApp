@@ -18,7 +18,7 @@
         = @profiles[service]
       - else
         is not connected.
-        %a(href="/auth/singly?service=#{service}") Connect
+        %a(href="/auth/#{service}/connect") Connect
 
 - if @github_events
   - @github_events.each do |event|

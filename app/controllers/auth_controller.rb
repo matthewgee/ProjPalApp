@@ -6,6 +6,11 @@ class AuthController < ApplicationController
   
   before_filter :authenticate_person!
 
+  def connect
+    session[:service] = params[:service]
+    redirect_to "/auth/singly?service=#{params[:service]}"
+  end
+
   def callback
     auth = request.env["omniauth.auth"]
     session[:access_token] = auth.credentials.token
