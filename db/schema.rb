@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120823140516) do
+ActiveRecord::Schema.define(:version => 20120824190812) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20120823140516) do
     t.integer  "shared_event_id"
     t.text     "description"
     t.string   "when_occurred"
-    t.string   "source"
+    t.string   "service_name"
     t.string   "type"
     t.integer  "visibility"
     t.datetime "created_at",      :null => false
