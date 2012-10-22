@@ -3,5 +3,11 @@ class Resource
   include Mongoid::Documents
   include Mongoid::Timestamps
 
-  attr_accessible :description, :id, :image_url, :name, :shared_event_id, :source, :type
+  field :name
+  field :image_url
+  field :type, type: Integer
+  field :source
+  field :description
+
+  belongs_to :shared_event
 end

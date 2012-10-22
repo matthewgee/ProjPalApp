@@ -4,11 +4,11 @@ class Event
   include Mongoid::Timestamps
   
   field :name
-  field :project_id, type Integer
-  field :person_id, type Integer
-  field :shared_event_id, type Integer
+  field :project_id, type: Integer
+  field :person_id, type: Integer
+  field :shared_event_id, type: Integer
   field :description
-  field :when_occurred, type DateTime
+  field :when_occurred, type: DateTime
   field :source
   field :type
   field :visibility
