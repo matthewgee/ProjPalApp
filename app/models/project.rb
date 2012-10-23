@@ -10,6 +10,7 @@ class Project
   field :path
 
   embeds_many :events
+  embeds_many :service_projects
   has_and_belongs_to_many :people
   
 end

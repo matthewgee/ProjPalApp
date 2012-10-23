@@ -6,7 +6,7 @@ class ServiceProject
   # field :service_id
   # field :project_id
   field :project_alias
-
-  belongs_to :project
+  
+  embedded_in :project
   belongs_to :service
 end
