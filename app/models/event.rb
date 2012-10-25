@@ -11,8 +11,8 @@ class Event
   field :type
   field :visibility
 
-  embedded_in :project
   belongs_to :person
-  
+  embedded_in :project
+  embeds_many :resources
+    
 end
-

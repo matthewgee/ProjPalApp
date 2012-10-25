@@ -9,5 +9,6 @@ class Resource
   field :source
   field :description
 
-  belongs_to :shared_event
+  embedded_in :event
+
 end
