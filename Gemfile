@@ -16,6 +16,8 @@ gem 'httparty'
 gem 'omniauth-singly'
 
 gem 'devise'
+gem "factory_girl_rails", "~> 4.0"
+
 # gem 'squeel'
 
 # Gems used only for assets and not required
