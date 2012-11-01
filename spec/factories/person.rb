@@ -1,3 +1,5 @@
+require spec_helper.rb
+
 FactoryGirl.define do
   factory :person do
     firstname "John"
