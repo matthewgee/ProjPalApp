@@ -1,3 +1,5 @@
+require 'devise'
+
 class Person
 
   include Mongoid::Document
