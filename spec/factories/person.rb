@@ -3,6 +3,6 @@ FactoryGirl.define do
     firstname "John"
     sequence(:lastname) { |n| "Doe-#{n}" }
     sequence(:email) {|n| "person#{n}@example.com" }
-    bio { generate(:random_string) }
+    bio "Bio for John"
   end
 end

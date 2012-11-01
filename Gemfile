@@ -8,11 +8,9 @@ gem 'rails', '3.2.3'
 group :test, :development do
   # Rspec
   gem "rspec-rails",            "~> 2.11.0"
-  gem "factory_girl_rails", "~> 4.0"
-end
-
-group :development do
-  gem 'sqlite3'
+  gem "factory_girl_rails",     "~> 4.0"
+  gem "database_cleaner"
+  gem "mongoid-rspec"
 end
 
 gem 'json'
