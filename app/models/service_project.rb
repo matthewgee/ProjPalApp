@@ -1,6 +1,6 @@
 class ServiceProject
 
-  include Mongoid::Documents
+  include Mongoid::Document
   include Mongoid::Timestamps
 
   # field :service_id

@@ -5,16 +5,8 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :test, :development do
-  # Rspec
-  gem "rspec-rails",            "~> 2.11.0"
-  gem "factory_girl_rails",     "~> 4.0"
-  gem "database_cleaner"
-  gem "mongoid-rspec"
-end
-
-gem 'json'
 gem "mongoid",                  "~> 3.0.1"
+gem 'json'
 
 gem 'haml', '3.1.4'
 gem 'httparty'
@@ -22,8 +14,13 @@ gem 'omniauth-singly'
 
 gem 'devise'
 
-
-# gem 'squeel'
+group :test, :development do
+  # Rspec
+  gem "rspec-rails",            "~> 2.11.0"
+  gem "factory_girl_rails",     "~> 4.0"
+  gem "database_cleaner"
+  gem "mongoid-rspec"
+end
 
 # Gems used only for assets and not required
 # in production environments by default.

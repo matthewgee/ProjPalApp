@@ -1,6 +1,6 @@
 class Project
 
-  include Mongoid::Documents
+  include Mongoid::Document
   include Mongoid::Timestamps
 
   field :name
