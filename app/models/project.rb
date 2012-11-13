@@ -8,9 +8,9 @@ class Project
   field :description
   field :color
   field :path
-
-  embeds_many :events
-  embeds_many :service_projects
-  has_and_belongs_to_many :people
+  field :service_aliases, type: Hash
   
+  embeds_many :events
+
+  has_and_belongs_to_many :people  
 end

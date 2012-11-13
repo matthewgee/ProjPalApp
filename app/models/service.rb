@@ -6,8 +6,7 @@ class Service
   field :service_name
   field :connect_count, type: Integer, default: 0
 
-  belongs_to :person
+  embedded_in :person
   attr_protected :person_id
-  
-  has_many :projects, :through => :service_project
+    
 end

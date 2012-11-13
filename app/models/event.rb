@@ -12,7 +12,9 @@ class Event
   field :visibility
 
   belongs_to :person
+  
   embedded_in :project
-  embeds_many :resources
-    
+  attr_protected :project_id
+
+  embeds_many :resources  
 end

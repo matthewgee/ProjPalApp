@@ -10,5 +10,6 @@ class Resource
   field :description
 
   embedded_in :event
+  attr_protected :event_id
 
 end

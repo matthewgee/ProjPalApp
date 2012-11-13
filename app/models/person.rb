@@ -40,6 +40,6 @@ class Person
 #  attr_accessible :bio, :firstname, :id, :lastname, :picture_url
   
   has_and_belongs_to_many :projects
-  has_many :services
+  embeds_many :services
 
 end
