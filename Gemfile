@@ -8,7 +8,7 @@ gem 'rails', '3.2.3'
 gem "mongoid",                  "~> 3.0.1"
 gem 'json'
 
-gem 'haml', '3.1.4'
+gem 'haml', '5.0.0'
 gem 'httparty'
 gem 'omniauth-singly'
 
